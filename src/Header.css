@@ -42,3 +42,10 @@
   display: flex;
   padding-right: 20px;
 }
+
+.name {
+  padding-top: 10px;
+  padding-right: 15px;
+  font-weight: 500;
+  font-size: 15px;
+}

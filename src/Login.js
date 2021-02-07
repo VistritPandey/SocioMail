@@ -28,8 +28,8 @@ const Login = () => {
     <div className="login">
       <div className="login__container">
         <img src={Logo} alt="" />
-        <Button variant="contained" color="secondary" onClick={signIn}>
-          Login
+        <Button variant="contained" color="primary" onClick={signIn}>
+          Sign In
         </Button>
       </div>
     </div>
