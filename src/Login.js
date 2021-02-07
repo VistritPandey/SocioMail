@@ -4,7 +4,7 @@ import { auth, provider } from "./firebase";
 import { useDispatch } from "react-redux";
 import { Button } from "@material-ui/core";
 import { login } from "./features/userSlice";
-import Mail from "Mail.png";
+import Logo from "./Logo.png";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="login__container">
-        <img src={Mail} alt="" />
+        <img src={Logo} alt="" />
         <Button variant="contained" color="secondary" onClick={signIn}>
           Login
         </Button>

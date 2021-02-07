@@ -8,7 +8,7 @@ import NotificationsRoundedIcon from "@material-ui/icons/NotificationsRounded";
 import { Avatar, IconButton } from "@material-ui/core";
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
-import Mail from "Mail.png";
+import Logo from "./Logo.png";
 
 const Header = () => {
   const user = useSelector(selectUser);
@@ -19,7 +19,7 @@ const Header = () => {
         <IconButton>
           <MenuRoundedIcon />
         </IconButton>
-        <img src={Mail} alt="" />
+        <img src={Logo} alt="" />
       </div>
       <div className="header__middle">
         <SearchRoundedIcon />
