@@ -16,9 +16,6 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__left">
-        <IconButton>
-          <MenuRoundedIcon />
-        </IconButton>
         <img src={Logo} alt="" />
       </div>
       <div className="header__middle">
@@ -27,12 +24,7 @@ const Header = () => {
         <ArrowDropDownRoundedIcon className="header__inputCaret" />
       </div>
       <div className="header__right">
-        <IconButton>
-          <AppsRoundedIcon />
-        </IconButton>
-        <IconButton>
-          <NotificationsRoundedIcon />
-        </IconButton>
+        <p className="name">Hello, {user.displayName}</p>
         <Avatar src={user?.photoURL} style={{ cursor: "pointer" }} />
       </div>
     </div>
