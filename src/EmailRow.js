@@ -32,9 +32,6 @@ const EmailRow = ({ id, title, subject, description, time }) => {
         <IconButton>
           <StarBorderRoundedIcon />
         </IconButton>
-        <IconButton>
-          <LabelOutlinedIcon />
-        </IconButton>
       </div>
       <h3 className="emailRow__title">{title}</h3>
       <div className="emailRow__message">

@@ -39,36 +39,16 @@ const MailList = () => {
           <IconButton>
             <ArrowDropDownRoundedIcon />
           </IconButton>
-          <IconButton>
-            <RedoRoundedIcon />
-          </IconButton>
-          <IconButton>
-            <MoreVertRoundedIcon />
-          </IconButton>
-        </div>
-        <div className="emailList__settingsRight">
-          <IconButton>
-            <ChevronLeftRoundedIcon />
-          </IconButton>
-          <IconButton>
-            <ChevronRightRoundedIcon />
-          </IconButton>
-          <IconButton>
-            <KeyboardHideRoundedIcon />
-          </IconButton>
-          <IconButton>
-            <SettingsRoundedIcon />
-          </IconButton>
         </div>
       </div>
       <div className="mailList__sections">
-        <Section Icon={InboxRoundedIcon} title="Primary" color="red" selected />
-        <Section Icon={PeopleRoundedIcon} title="Social" color="#1A73E8" />
         <Section
-          Icon={LocalOfferRoundedIcon}
-          title="Promotions"
-          color="green"
+          Icon={InboxRoundedIcon}
+          title="Important"
+          color="red"
+          selected
         />
+        <Section Icon={PeopleRoundedIcon} title="Social" color="#1A73E8" />
       </div>
       <div className="mailList__list">
         {emails.map(({ id, data: { to, subject, message, timestamp } }) => (
